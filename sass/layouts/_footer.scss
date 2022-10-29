@@ -1,0 +1,149 @@
+footer {
+  background-color: #2f303a;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.container-footer {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer-logo,
+.footer-logo:visited {
+  text-decoration: none;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--secondary-color);
+}
+
+.active-logo {
+  color: var(--active-link-color);
+}
+
+.address {
+  display: flex;
+  font-style: normal;
+  margin-top: 20px;
+}
+
+.address-map {
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  letter-spacing: 0.03em;
+  color: var(--secondary-color);
+}
+
+.address-list {
+  margin-top: 9px;
+}
+
+.address-item {
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  letter-spacing: 0.03em;
+  color: var(--address-color);
+}
+
+.footer-contact {
+  align-items: baseline;
+  justify-content: center;
+  margin-left: 70px;
+}
+
+.soc-link-header {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--secondary-color);
+}
+
+.footer-soc-list {
+  display: flex;
+  margin-top: 20px;
+  gap: 10px;
+}
+
+.footer-soc-link {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  align-items: center;
+  justify-content: center;
+  transition: background-color 250ms var(--transition-timing-fun),
+    fill 250ms var(--transition-timing-fun);
+  &:hover,
+  &:focus {
+    background-color: var(--active-bg-color);
+  }
+}
+
+.footer-soc-icon {
+  fill: var(--secondary-color);
+  .footer-soc-link:hover &,
+  .footer-soc-link:focus & {
+    fill: var(--secondary-color);
+  }
+}
+
+.subscribe {
+  margin-left: 93px;
+}
+
+.subscribe-header {
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.subscribe-input {
+  width: 358px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  outline: transparent;
+  background-color: transparent;
+  padding-left: 16px;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.subscribe-input:focus {
+  border: 1px solid var(--active-bg-color);
+}
+
+.footer-form {
+  display: flex;
+}
+
+.subscribe-button {
+  color: var(--secondary-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  font-weight: 700;
+  border: none;
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: 0.06em;
+  background-color: var(--active-bg-color);
+  min-width: 200px;
+  min-height: 50px;
+  margin-left: 12px;
+  padding-left: 28px;
+  align-items: center;
+  display: flex;
+}
+
+.submit-icon {
+  align-self: center;
+  margin-left: 10px;
+}

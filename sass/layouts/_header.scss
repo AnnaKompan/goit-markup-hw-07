@@ -1,0 +1,91 @@
+.header {
+  padding-top: 24px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #ececec;
+}
+
+.header-logo,
+.header-logo:visited {
+  text-decoration: none;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--header-text-color);
+  margin-right: 93px;
+}
+
+.header-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: var(--typical-lh);
+  letter-spacing: 0.02em;
+  color: var(--main-color);
+  position: relative;
+}
+
+.current::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: var(--active-bg-color);
+  margin-top: 28px;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+.header-parent {
+  display: flex;
+  align-items: center;
+}
+
+.header-nav {
+  display: flex;
+  gap: 50px;
+}
+
+.header-contacts {
+  display: flex;
+  margin-left: auto;
+  gap: 30px;
+}
+
+.contact {
+  display: flex;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: var(--typical-lh);
+  letter-spacing: 0.02em;
+  color: var(--pale-color);
+  align-items: center;
+  justify-content: center;
+}
+
+.mail-icon {
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  fill: #757575;
+  .link:hover &,
+  .link:focus & {
+    fill: var(--active-link-color);
+  }
+}
+
+.tel-icon {
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+  fill: #757575;
+  .link:hover &,
+  .link:focus & {
+    fill: var(--active-link-color);
+  }
+}
