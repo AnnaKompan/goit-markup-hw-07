@@ -4,24 +4,19 @@ footer {
   padding-bottom: 60px;
 }
 
-.container-footer {
+.container__footer {
   display: flex;
   align-items: baseline;
 }
 
-.footer-logo,
-.footer-logo:visited {
+.footer__logo,
+.footer__logo:visited {
   text-decoration: none;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  color: var(--secondary-color);
-}
-
-.active-logo {
-  color: var(--active-link-color);
 }
 
 .address {
@@ -30,31 +25,31 @@ footer {
   margin-top: 20px;
 }
 
-.address-map {
+.address__map {
   font-size: 14px;
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
   color: var(--secondary-color);
 }
 
-.address-list {
+.address__list {
   margin-top: 9px;
 }
 
-.address-item {
+.address__item {
   font-size: 14px;
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
   color: var(--address-color);
 }
 
-.footer-contact {
+.footer__contact {
   align-items: baseline;
   justify-content: center;
   margin-left: 70px;
 }
 
-.soc-link-header {
+.footer__header {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -69,14 +64,14 @@ footer {
   gap: 10px;
 }
 
-.footer-soc-link {
+.footer-soc-list__link {
   display: flex;
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  background-color: rgba(255, 255, 255, 0.1);
   align-items: center;
   justify-content: center;
+  background-color: rgba(255, 255, 255, 0.1);
   transition: background-color 250ms var(--transition-timing-fun),
     fill 250ms var(--transition-timing-fun);
   &:hover,
@@ -85,19 +80,20 @@ footer {
   }
 }
 
-.footer-soc-icon {
+.footer-soc-list__icon {
   fill: var(--secondary-color);
-  .footer-soc-link:hover &,
-  .footer-soc-link:focus & {
-    fill: var(--secondary-color);
-  }
+}
+
+.footer-soc-list__link:hover .footer-soc-list__icon,
+.footer-soc-list__link:focus .footer-soc-list__icon {
+  fill: var(--secondary-color);
 }
 
 .subscribe {
   margin-left: 93px;
 }
 
-.subscribe-header {
+.subscribe__header {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
@@ -106,7 +102,7 @@ footer {
   margin-bottom: 20px;
 }
 
-.subscribe-input {
+.subscribe__input {
   width: 358px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -117,15 +113,15 @@ footer {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.subscribe-input:focus {
+.subscribe__input:focus {
   border: 1px solid var(--active-bg-color);
 }
 
-.footer-form {
+.subscribe__form {
   display: flex;
 }
 
-.subscribe-button {
+.subscribe__button {
   color: var(--secondary-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
@@ -143,7 +139,7 @@ footer {
   display: flex;
 }
 
-.submit-icon {
+.subscribe__icon {
   align-self: center;
   margin-left: 10px;
 }

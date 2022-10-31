@@ -1,4 +1,4 @@
-.about-list {
+.about__list {
   display: flex;
   gap: 30px;
 }
@@ -7,7 +7,7 @@
   padding-top: 94px;
   padding-bottom: 94px;
 }
-.about-title {
+.about__title {
   font-weight: 700;
   font-size: 14px;
   line-height: var(--typical-lh);
@@ -17,14 +17,14 @@
   margin-bottom: 10px;
 }
 
-.about-content {
+.about__content {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--pale-color);
 }
 
-.about-item::before {
+.about__item::before {
   display: block;
   content: "";
   height: 120px;

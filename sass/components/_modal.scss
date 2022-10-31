@@ -25,12 +25,12 @@
   transform: translate(-50%, -50%) scale(1);
 }
 
-.modal-close-icon:hover,
-.modal-close-icon:focus {
+.modal__icon:hover,
+.modal__icon:focus {
   fill: var(--active-bg-color);
 }
 
-.modal-btn {
+.modal__btn {
   width: 30px;
   height: 30px;
   border: 1px solid rgba(0, 0, 0, 0.1);
@@ -51,14 +51,14 @@
   pointer-events: none;
 }
 
-.modal-title {
+.modal__title {
   font-weight: 700;
   font-size: 20px;
   text-align: center;
   margin-bottom: 12px;
 }
 
-.modal-input {
+.modal-wrap__input {
   width: 100%;
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -74,36 +74,36 @@
   position: relative;
 }
 
-.modal-input-icon {
+.modal-wrap__icon {
   position: absolute;
   width: 18px;
   height: 18px;
   top: 50%;
   transform: translateY(-50%);
   left: 12px;
-  .modal-input:focus + & {
+  .modal-wrap__input:focus + & {
     fill: var(--active-bg-color);
   }
 }
 
-.modal-label-name {
+.modal__name {
   display: block;
   margin-top: 12px;
 }
 
-.modal-label {
+.modal__label {
   display: block;
   margin-top: 10px;
 }
 
-.modal-label-text {
+.modal__text {
   font-size: 12px;
   color: #757575;
   margin-bottom: 4px;
   display: block;
 }
 
-.modal-comment {
+.modal__comment {
   width: 100%;
   height: 120px;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -137,18 +137,18 @@
     fill: transparent;
   }
 
-  .input-check:checked + & span {
+  .modal-field__check:checked + & span {
     background-color: var(--active-bg-color);
     border-color: transparent;
     fill: var(--secondary-color);
   }
 
-  .input-check:focus + & span {
+  .modal-field__check:focus + & span {
     border-color: var(--active-link-color);
   }
 }
 
-.check-icon {
+.modal-field__icon {
   width: 16px;
   height: 15px;
 }
@@ -161,7 +161,7 @@
   text-underline-offset: 3px;
 }
 
-.modal-button {
+.modal__button {
   color: var(--secondary-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
